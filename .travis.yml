@@ -1,0 +1,12 @@
+language: php
+php:
+  - 5.5
+dist:
+  - xenial
+script:
+  - phpunit guardarjson.php
+env:
+  - TASKS='test'
+notifications:
+  email:
+    - ghalcivar_13@outlook.com
