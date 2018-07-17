@@ -1,12 +1,8 @@
 language: node_js
 node_js:
   - "stable"
-cache:
-  directories:
-  - node_modules
 script:
-  - npm script.js
-  - npm run build
+  - npm script
 notifications:
   email:
     - ghalcivar_13@outlook.com
@@ -17,3 +13,5 @@ deploy:
   local_dir: build
   on:
     branch: master
+
+  
